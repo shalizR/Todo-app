@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Note App</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js"
+    integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous" defer></script>
+  <script src="scripts/index.js" type="module"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body class="body body--primary home">
+  <header class="header">
+    <a class="header__link" href="/">TODO / Today date</a>
+    <a class="header__link header__toggle--style" href="/">Toggle Style</a>
+  </header>
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__list--item create__todo"><a href="#">Create New TODO</a></li>
+      <li class="nav__list--item filter"><a href="#">By Name</a></li>
+      <li class="nav__list--item filter"><a href="#">By Due Date</a></li>
+      <li class="nav__list--item filter"><a href="#">By Creation Date</a></li>
+      <li class="nav__list--item filter"><a href="#">Importance</a></li>
+      <li class="nav__list--item filter"><a href="#">Filter Completed</a></li>
+    </ul>
+  </nav>
+  <main class="main">
+    <p class="main__dudate">due date</p>
+    <p class="main__title">title</p>
+    <p class="main__importance">title</p>
+    <div class="button-container">
+      <button class="button button--primary">Edit<img class="button__icon" src="" alt="Edit"></button>
+    </div>
+  </main>
+
+
+</body>
+
+</html>
