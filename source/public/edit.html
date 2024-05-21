@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Note App</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js"
+    integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous" defer></script>
+  <script src="scripts/index.js" type="module"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body class="body body--primary home">
+  <header class="header">
+    <h2><a class="header__link" href="/">Edit</a></h1>
+  </header>
+  <main>
+    <form>
+        <lable>Title</lable>
+        <input type="text" id="ftitle" name="ftitle">
+        <lable>Importance</lable>
+        <input type="text" id="fimportance" name="fimportance">
+        <lable>Due Date</lable>
+        <input type="text" id="fduedate" name="fduedate">
+        <lable>Finished</lable>
+        <input type="checkbox" id="fstatus" name="fstatus">
+        <lable>Description</lable>
+        <input type="textarea" id="fdescription" name="fdescription">
+        <input type="submit" value="Update">
+        <input type="submit" value="Update & Overview">
+        <input type="submit" value="Overview">        
+    </form>
+  </main>
+  
+
+
+</body>
+
+</html>
