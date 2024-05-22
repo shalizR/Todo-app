@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --color-primary: #ff7b54;
   --color-text-on-primary: #ffffff;
@@ -6,10 +15,11 @@
 
   --color-button-primary-bg: var(--color-text-on-primary);
   --color-button-primary-text: var(--color-primary);
+  --color-button-hover: #327c94;
 
   --color-button-secondary-bg: var(--color-primary);
   --color-button-secondary-text: var(--color-text-on-primary);
-
+  
   --font-family: "Inter", sans-serif;
 }
 
@@ -105,3 +115,17 @@ a:hover{
   font-size: 18px;
   margin-inline-end: 36px;
 }
+
+.button {
+  background-color: var(--color-text-on-primary);
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: var(--color-primary);
+  text-decoration: none;
+  border: none;
+}
+
+.button:hover {
+  background-color: var(--color-button-hover);
+}
+
