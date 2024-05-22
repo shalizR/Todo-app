@@ -10,30 +10,70 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/edit.css">
 </head>
 
 <body class="body body--primary home">
   <header class="header">
     <h2><a class="header__link" href="/">Edit</a></h1>
   </header>
-  <main>
-    <form>
-        <lable>Title</lable>
-        <input type="text" id="ftitle" name="ftitle">
-        <lable>Importance</lable>
-        <input type="text" id="fimportance" name="fimportance">
-        <lable>Due Date</lable>
-        <input type="text" id="fduedate" name="fduedate">
-        <lable>Finished</lable>
-        <input type="checkbox" id="fstatus" name="fstatus">
-        <lable>Description</lable>
-        <input type="textarea" id="fdescription" name="fdescription">
+  <form>
+    <label for="title" class="field">
+      <span class="label-text">Title</span>
+      <input type="text" id="title">
+    </label>
+    <label for="importance" class="field">
+      <span class="label-text">Importance</span>
+      <input type="text" id="importance">
+    </label>
+    <label type="Date" for="duedate" class="field">
+      <span class="label-text">Due Date</span>
+      <input type="text" id="duedate">
+    </label>
+    <label for="finished" class="field">
+      <span class="label-text">Finished</span>
+      <input type="checkbox" id="finished" class="checkbox">
+    </label>
+    <label for="description" class="field">
+      <span class="label-text">Description</span>
+      <textarea rows="4" cols="50" name="" id="description"></textarea>
+    </label>
+    <div class="button-container">
+      <button class="button first">Update</button>
+      <button class="button second">Update & Overview</button>
+      <button class="button third">Overview</button>
+    </div>
+    
+  </form>
+  <!-- <main>
+    <form class="container">
+      <div class="sub-container title">
+        <lable class="label">Title</lable>
+        <input class="input" type="text" id="ftitle" name="ftitle">
+      </div>
+      <div class="sub-container importance">
+        <lable class="label">Importance</lable>
+        <input class="input" type="text" id="fimportance" name="fimportance">
+      </div>
+      <div class="sub-container duedate">
+        <lable class="label">Due Date</lable>
+        <input class="input" type="text" id="fduedate" name="fduedate">
+      </div>
+      <div class="sub-container finished">
+        <lable class="label">Finished</lable>
+        <input class="input" type="checkbox" id="fstatus" name="fstatus">
+      </div>
+      <div class="sub-container description">
+        <lable class="label">Description</lable>
+        <textarea rows="4" cols="50" id="fdescription" name="fdescription"></textarea>
+      </div>  
+      <div class="sub-container buttons">
         <input type="submit" value="Update">
         <input type="submit" value="Update & Overview">
         <input type="submit" value="Overview">        
+      </div>   
     </form>
-  </main>
+  </main> -->
   
 
 
