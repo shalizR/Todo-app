@@ -11,35 +11,50 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/base.css">
 </head>
 
 <body class="body body--primary home">
   <header class="header">
     <h2><a class="header__link" href="/">TODO / Today date</a></h1>
-    <img width="64" height="64" src="https://img.icons8.com/glyph-neue/64/000000/toggle-on.png" alt="toggle-on"/> 
-    <!-- <a target="_blank" href="https://icons8.com/icon/aXdJtRuSly4i/toggle-on">Toggle</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
-    <a class="header__link header__toggle--style" href="/">Toggle Style</a>
+    <a class="header__link header__toggle--style" href="/"><img width="64" height="64" src="/Todo-app/source/public/icons/toggle-on-white-100.png" alt="toggle-on"/> </a>
   </header>
   <!-- TODO: put nav into header -->
-  <nav class="nav">
-    <ul class="nav__list">
-      <li class="nav__list--item create__todo"><a href="#">Create New TODO</a></li>
-      <li class="nav__list--item filter"><a href="#">By Name</a></li>
-      <li class="nav__list--item filter"><a href="#">By Due Date</a></li>
-      <li class="nav__list--item filter"><a href="#">By Creation Date</a></li>
-      <li class="nav__list--item filter"><a href="#">Importance</a></li>
-      <li class="nav__list--item filter"><a href="#">Filter Completed</a></li>
-    </ul>
-  </nav>
+
   <!-- TODO: add section into main for grouping -->
   <main class="main">
-    <ul class="main__list">
-      <li class="main__list--item">due date placeholder</li>
-      <li class="main__list--item">todo title placeholder</li>
-      <li class="main__list--item">priority placeholder</li>
-      <li class="main__list--item"><button class="button button--primary">Edit</button></li>
-    </ul>
-    
+    <section class="action">
+      <button class="button first">Create New TODO</button>
+      <div class="button-filter">
+        <button class="button second">By Title</button>
+        <button class="button third">By Due Date</button>
+        <button class="button forth">By Creation Date</button>
+        <button class="button fifth">By Importance</button>
+      </div>
+      
+      <button class="button">Filter Completed</button>
+    </section>
+    <section class="content">
+      <form>
+        <label for="duedate" class="field first-column">
+          <input type="date" id="duedate" readonly>
+        </label>
+        <label for="title" class="field second-column">
+          <input type="text" id="title" readonly placeholder="title">
+        </label>
+        <label for="priority" class="field third-column">
+          <input type="number" id="priority" readonly placeholder="priority">
+        </label>
+        <label for="finished" class="field first-column">
+          <span class="label-text checkbox">open</span>
+          <input type="checkbox" id="finished" class="checkbox">
+        </label>
+        <label for="description" class="field second-column">
+          <textarea rows="4" cols="50" name="" id="description" readonly placeholder="description"></textarea>
+        </label>
+        <button type="submit" class="button edit">Edit</button>
+      </form>
+    </section>
   </main>
 
 

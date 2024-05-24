@@ -69,50 +69,11 @@ a:hover{
   padding: 0 60px;
   font-size: 26px;
   font-weight: bold;
+  border: 2px solid red;
+  max-width: 1200px;
 }
 
 .header__toggle--style {
-  margin-inline-end: 36px;
-}
-
-.nav {
-  display: inline-block;
-  width: 100vw;
-}
-
-.nav__list {
-  display: grid;
-  grid-template-columns: 3fr repeat(5, 1fr);
-  grid-template-rows: 1fr;
-  align-items: center;
-  padding: 0 60px;
-}
-
-.nav__list--item {
-  list-style: none;
-  font-size: 20px;
-  margin-inline-end: 36px;
-}
-
-.create__todo {
-  font-weight: bold;
-}
-
-.filter {
-  justify-self: end;
-}
-
-.main__list{
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr 100px;
-  grid-template-rows: 5fr;
-  align-items: center;
-  padding: 0 60px;
-}
-
-.main__list--item {
-  list-style: none;
-  font-size: 18px;
   margin-inline-end: 36px;
 }
 
